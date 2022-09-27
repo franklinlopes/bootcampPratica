@@ -1,7 +1,6 @@
 package bank.typeOfUsers;
 
 import bank.transactions.ShowBalance;
-import bank.transactions.Transaction;
 import bank.transactions.WithDraw;
 
 public class TicketCollector implements WithDraw, ShowBalance {
