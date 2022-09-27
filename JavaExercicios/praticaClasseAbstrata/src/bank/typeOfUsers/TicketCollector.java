@@ -4,7 +4,7 @@ import bank.transactions.ShowBalance;
 import bank.transactions.Transaction;
 import bank.transactions.WithDraw;
 
-public class TicketCollector implements WithDraw, ShowBalance, Transaction {
+public class TicketCollector implements WithDraw, ShowBalance {
     @Override
     public void withDraw(double value) {
         System.out.println("$ withdrawal: " + value);
