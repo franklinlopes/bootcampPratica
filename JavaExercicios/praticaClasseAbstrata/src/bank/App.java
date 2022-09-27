@@ -1,6 +1,8 @@
 package bank;
 
+import bank.typeOfUsers.Basic;
 import bank.typeOfUsers.Executive;
+import bank.typeOfUsers.TicketCollector;
 
 public class App {
     public static void main(String[] args) {
@@ -12,5 +14,18 @@ public class App {
 
         executive.doTransference(800.00);
         executive.transacaoNaoOk("Transference");
+
+        System.out.println("--Cobrador--");
+        TicketCollector ticketCollector = new TicketCollector();
+        ticketCollector.withDraw(900.00);
+        ticketCollector.transacaoOk("WithDraw");
+
+        ticketCollector.showBalance();
+        ticketCollector.transacaoNaoOk("Show Balance");
+
+        System.out.println("--Basic--");
+        Basic basic = new Basic();
+        basic.doPayment("Netflix");
+
     }
 }
