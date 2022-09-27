@@ -1,5 +1,5 @@
 package bank.transactions;
 
 public interface PaymentOfServices {
-    public void doPayment(double value);
+    public void doPayment(String typeService);
 }
