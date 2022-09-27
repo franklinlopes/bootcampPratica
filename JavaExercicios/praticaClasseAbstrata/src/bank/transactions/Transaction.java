@@ -1,4 +1,4 @@
-package transactions;
+package bank.transactions;
 
 public interface Transaction {
     public abstract void transacaoOk(String typeTransaction);
