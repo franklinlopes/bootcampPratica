@@ -1,5 +1,5 @@
 package transactions;
 
 public interface Deposit extends Transaction {
-    public abstract void doDeposit(double value);
+    public void doDeposit(double value);
 }
